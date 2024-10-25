@@ -10,10 +10,10 @@ grades_d3 = sum(grades[3]) / len(grades[3])
 grades_e4 = sum(grades[4]) / len(grades[4])
 grades_list = [grades_a0, grades_b1, grades_c2, grades_d3, grades_e4]
 
-dict = {}                                   # делаем выборку значений из списков учеников и оценок в общий словарь
+dict_ = {}                                   # делаем выборку значений из списков учеников и оценок в общий словарь
 for key in students_list:
     for value in grades_list:
-        dict[key] = value
+        dict_[key] = value
         grades_list.remove(value)
         break
-print('' + str(dict))
+print('' + str(dict_))
